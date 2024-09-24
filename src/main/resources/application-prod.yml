@@ -29,8 +29,8 @@ spring:
         multiplier: 1.1
   datasource:
     driver-class-name: com.amazonaws.secretsmanager.sql.AWSSecretsManagerPostgreSQLDriver
-    username: <YOUR-AWS-SECRECTS-MANAGER-NAME>
-    url: jdbc-secretsmanager:postgresql://<YOUR-AWS-RDS-DB-URL>:5432/awsome_books
+    username: rds!db-d1669331-6321-4f10-ba51-1734f2bfb162
+    url: jdbc-secretsmanager:postgresql://awsome-books.cliq64c00zrx.us-east-1.rds.amazonaws.com:5432/awsome_books
     hikari:
       connection-timeout: 2000 #ms
       maximum-pool-size: 5
@@ -42,4 +42,4 @@ spring:
 
 
 polar:
-  greeting: Welcome to the prod book catalog!
+  greeting: Welcome to the prod AWSome Books!
